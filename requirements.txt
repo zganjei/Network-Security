@@ -3,6 +3,8 @@ pandas
 numpy
 pymongo
 certifi
+pymongo[srv]==3.12
+
 
 #this triggers the setup.py script. I comment it out for now
 ##-e .
