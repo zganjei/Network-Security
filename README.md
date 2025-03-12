@@ -1,5 +1,5 @@
 # Network-Security
-End to End Network Security Project with MLOPS and ETL pipelines
+This is my End to End Network Security Project with MLOPS and ETL pipelines. The aim of project is to detect phishing data.
 
 
 Conda
