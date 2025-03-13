@@ -1,6 +1,6 @@
 # Network Security
-This is my End to End Network Security Project with MLOPS and ETL pipelines. The aim of project is to detect phishing data.
-I use modular coding
+This is my End to End Network Security Project with MLOps and ETL pipelines. The aim of project is to detect phishing.
+I use modular coding and Object-Oriented Programming in Python.
 
 ## Project structure 
 
@@ -19,6 +19,10 @@ Transformation
 * converting to json
 
 Then the Json file is stored in MongoDB Atlas
+
+## Data Ingestion Architecture
+
+Data Ingestion Config -> Initiate Data Ingestion -> Export raw Data from MongoDB to Feature Store -> Drop unnecassary Columns  and do Feature Engineering -> Split data into train and test -> Data Ingestion Artifact(output) to Feature Store
 
 
 
@@ -41,4 +45,8 @@ Create logging and exception handling
 
 Create MongoDB Atlas cluster, create a user and test connection
 
+Create ETL pipeline (push_data.py)
+
+
+Add Data ingestion
 
