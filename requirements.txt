@@ -4,6 +4,9 @@ numpy
 pymongo
 certifi
 pymongo[srv]==3.12
+# pickle
+pyaml
+dill
 
 
 #this triggers the setup.py script. I comment it out for now
