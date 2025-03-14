@@ -50,3 +50,8 @@ Data Ingestion Config -> Initiate Data Ingestion -> Export raw Data from MongoDB
 At this stage we need to ensure that our data has the same schema, and we don't have data drift (distribution, etc has not changed)
 
 Data Validation Config -> Initiate Data Validation -> Read Data -> Validate number of Columns -> do numerical columns exist?
+
+
+## Data Transformation Architecture
+
+Prerocessing data to Replace NAN values, Scale input
