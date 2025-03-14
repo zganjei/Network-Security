@@ -55,3 +55,7 @@ Data Validation Config -> Initiate Data Validation -> Read Data -> Validate numb
 ## Data Transformation Architecture
 
 Prerocessing data to Replace NAN values, Scale input
+
+## Model Trainer Architecture
+
+Model trainer config , Data Transformation Artifacts -> Initiate Model Training -> Load numpy array data -> Split train and test-> Model factory -> get best model -> Model sensor -> calculate metric -> Model Trainer Artifact (model.pkl file)
