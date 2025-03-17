@@ -57,6 +57,9 @@ Data Validation Config -> Initiate Data Validation -> Read Data -> Validate numb
 
 Prerocessing data to Replace NAN values, Scale input
 
-## Model Trainer Architecture
+## Model Training and Evaluation Architecture
 
 Model trainer config , Data Transformation Artifacts -> Initiate Model Training -> Load numpy array data -> Split train and test-> Model factory -> get best model -> Model sensor -> calculate metric -> Model Trainer Artifact (model.pkl file)
+
+## MLflow
+Add mlflow tracking to code and use DAGsHub to connect to this repository. In the repo at DagsHub, choose remote -> experiments and copy the code. Add the code to model training file. Then the local mlflow will not be created. Instead they will go to dagshub experiments.

@@ -15,6 +15,13 @@ import mlflow
 import os,sys
 import pandas as pd
 
+import dagshub
+dagshub.init(repo_owner='zzganjei', repo_name='Network-Security', mlflow=True)
+
+# with mlflow.start_run():
+#   mlflow.log_param('parameter name', 'value')
+#   mlflow.log_metric('metric name', 1)
+
 
 class ModelTraining:
     def __init__(self, model_trainer_config: ModelTrainingConfig, data_transformation_artifact: DataTransformationArtifact):

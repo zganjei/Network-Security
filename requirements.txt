@@ -9,6 +9,7 @@ pyaml
 dill
 # sklearn
 mlflow
+dagshub
 
 
 #this triggers the setup.py script. I comment it out for now
