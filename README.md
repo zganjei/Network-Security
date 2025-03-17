@@ -1,6 +1,7 @@
 # Network Security
-This is my End to End Network Security Project with MLOps and ETL pipelines. The aim of project is to detect phishing.
-I use modular coding and Object-Oriented Programming in Python.
+This is my End to End Network Security Project with MLOps and ETL pipelines. The aim of project is to detect phishing using Machine Learning.
+I use modular coding and Object-Oriented Programming in Python. 
+List of tools/libraries/frameworks used: Sklearn, Numpy, Pandas, MLFlow, AWS, EC2, Github Action, MongoDB
 
 ## Project structure 
 
