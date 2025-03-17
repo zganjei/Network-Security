@@ -1,7 +1,7 @@
 # Network Security
 This is my End to End Network Security Project with MLOps and ETL pipelines. The aim of project is to detect phishing using Machine Learning.
 I use modular coding and Object-Oriented Programming in Python. 
-List of tools/libraries/frameworks used: Sklearn, Numpy, Pandas, MLFlow, AWS, EC2, Github Action, MongoDB
+List of tools/libraries/frameworks used: Sklearn, Numpy, Pandas, MLFlow, AWS, EC2, Github Action, MongoDB, FAST API,
 
 ## Project structure 
 
@@ -40,7 +40,9 @@ Transformation
 * cleaning raw data
 * converting to json
 
-Then the Json file is stored in MongoDB Atlas
+Then the Json file is stored in MongoDB Atlas.
+
+Create training pipeline and add the following steps to that:
 
 ## Data Ingestion Architecture
 
@@ -63,3 +65,8 @@ Model trainer config , Data Transformation Artifacts -> Initiate Model Training 
 
 ## MLflow
 Add mlflow tracking to code and use DAGsHub to connect to this repository. In the repo at DagsHub, choose remote -> experiments and copy the code. Add the code to model training file. Then the local mlflow will not be created. Instead they will go to dagshub experiments.
+
+add app.py file which is the frontand and will trigger the pipeline
+
+
+![alt text](image-1.png)

@@ -43,7 +43,7 @@ class ModelTraining:
             mlflow.log_metric("recall_score",recall_score)
             mlflow.sklearn.log_model(best_model, "model")
     
-    def train_model(self, x_train, y_train, x_test, y_test):
+    def train_model(self, X_train, y_train, X_test, y_test):
         try:
             models = {
                 "Random Forest": RandomForestClassifier(verbose=1),
@@ -77,15 +77,16 @@ class ModelTraining:
                     'n_estimators': [8,16,32,64,128,256],
                 }
             }
-            model_report: dict = evaluate_models(X_train=x_train, y_train=y_train,X_test=x_test,y_test=y_test,
+            model_report: dict = evaluate_models(X_train=X_train, y_train=y_train,X_test=X_test,y_test=y_test,
                                                  models=models, params=params)
             best_model_score = max(model_report.values())
             best_model_name = list(model_report.keys())[list(model_report.values()).index(best_model_score)]
             best_model = models[best_model_name]
-            y_train_pred = best_model.predict(x_train)
+            y_train_pred = best_model.predict(X_train)
+            
             classification_train_metric = get_classification_score(y_true=y_train,y_pred=y_train_pred)
 
-            y_test_pred = best_model.predict(x_test)
+            y_test_pred = best_model.predict(X_test)
             classification_test_metric = get_classification_score(y_true=y_test,y_pred=y_test_pred)
 
             

@@ -10,6 +10,8 @@ dill
 # sklearn
 mlflow
 dagshub
+fastapi
+uvicorn
 
 
 #this triggers the setup.py script. I comment it out for now

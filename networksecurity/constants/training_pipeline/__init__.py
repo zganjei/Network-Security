@@ -41,7 +41,7 @@ PREPROCESSING_OBJECT_FILE_NAME: str = "preprocessing.pkl"
 """
 Data Transformation constants
 """
-DATA_TRANFORMATION_DIR_NAME: str =  "data_transformation"
+DATA_TRANSFORMATION_DIR_NAME: str =  "data_transformation"
 DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR: str = "transformed"
 DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR: str = "transformed_object"
 
