@@ -100,10 +100,13 @@ class ModelTraining:
 
             network_model = NetworkModel(preprocessor=preprocessor, model=best_model)
             save_object(self.model_training_config.trained_model_file_path,network_model)
+            save_object("final_model/model.pkl",best_model)
+
             # Model Training Artifact
-            model_training_artifact = ModelTrainingArtifact(trained_model_file_path=self.model_training_config.trained_model_file_path,
-                                  train_metric_artifact=classification_train_metric,
-                                  test_metric_artifact=classification_test_metric)
+            model_training_artifact = ModelTrainingArtifact(
+                                    trained_model_file_path=self.model_training_config.trained_model_file_path,
+                                    train_metric_artifact=classification_train_metric,
+                                    test_metric_artifact=classification_test_metric)
             
             logging.info(f"Model training artifact {model_training_artifact}")
             return model_training_artifact

@@ -10,7 +10,7 @@ import sys
 
 if __name__=="__main__":
     try:
-        # pipeline
+        # Training pipeline
         training_pipeline_config = TrainingPipelineConfig()
 
         # data ingestion
