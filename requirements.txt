@@ -12,6 +12,7 @@ mlflow
 dagshub
 fastapi
 uvicorn
+python-multipart
 
 
 #this triggers the setup.py script. I comment it out for now

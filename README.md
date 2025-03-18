@@ -69,4 +69,10 @@ Add mlflow tracking to code and use DAGsHub to connect to this repository. In th
 add app.py file which is the frontand and will trigger the pipeline
 
 
+```
+uvicorn app:app --reload
+```
+
+
+
 ![alt text](image-1.png)
