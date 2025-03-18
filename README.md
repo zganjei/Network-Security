@@ -100,4 +100,6 @@ Create an S3 bucket
 
 ## Cloudify: Step 2. Store docker image in AWS ECR
 
+Create ECR (Elastic Contrainer Registry) repository which is a fully-managed docker registry. Then copy the URI next to repository name and add it as a secret to github actions.
+
 ## Cloudify: Step 3. Deploying the docker image in AWS EC2
