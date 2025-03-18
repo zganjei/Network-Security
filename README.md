@@ -1,7 +1,7 @@
 # Network Security
 This is my End to End Network Security Project with MLOps and ETL pipelines. The aim of project is to detect phishing using Machine Learning.
 I use modular coding and Object-Oriented Programming in Python. 
-List of tools/libraries/frameworks used: Sklearn, Numpy, Pandas, MLFlow, AWS, EC2, Github Action, MongoDB, FAST API,
+List of tools/libraries/frameworks used: Sklearn, Numpy, Pandas, MLFlow, AWS S3, EC2, Github Actions, MongoDB, FAST API,  Docker
 
 ## Project structure 
 
@@ -76,3 +76,23 @@ uvicorn app:app --reload
 
 
 ![alt text](image-1.png)
+
+
+## Cloudify: 1. Install AWS CLI on Codespaces
+
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+
+```
+
+Create IAM user on AWS with -> attach policies directly ->add  permission AdministratorAccess -> create user
+
+users -> select the user -> access keys -> create Access Key -> command line interface -> Create Access key
+
+in the terminal write
+aws configure
+then pass the newly generated aws access key
+
+Create an S3 bucket
