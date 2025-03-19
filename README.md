@@ -103,3 +103,25 @@ Create an S3 bucket
 Create ECR (Elastic Contrainer Registry) repository which is a fully-managed docker registry. Then copy the URI next to repository name and add it as a secret to github actions.
 
 ## Cloudify: Step 3. Deploying the docker image in AWS EC2
+Add a job to CI/CD pipeline for deployment
+Create an EC2 instance and allow HTTPS and HTTP to that from the internet. When the instance is created, click on it and choose connect and use default settings.
+
+Execute these commands in EC2 terminal to setup docker
+```
+sudo apt-get update -y
+sudo apt-get upgrade
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker
+```
+
+Then in Github repo go to Settings -> Actions -> Runners -> New self-hosted runner
+Choose linux and run the commands in EC2 terminal
+
+At somepoint you are prompted to enter a group name, enter to choose default, then there is a prompt to pick a name for runner, choose self-hosted
+
+After executing ```./run.sh``` on scree it will be written Listening for jobs. and in Github we can see the newly added runner under Runners
+
+Then push the changes
