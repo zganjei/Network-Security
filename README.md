@@ -124,4 +124,4 @@ At somepoint you are prompted to enter a group name, enter to choose default, th
 
 After executing ```./run.sh``` on scree it will be written Listening for jobs. and in Github we can see the newly added runner under Runners
 
-Then push the changes
+Then push the changes. After CI/CD is done, on EC2 we see 2025-03-19 08:11:01Z: Job Continuous-Deployment completed with result: Succeeded
