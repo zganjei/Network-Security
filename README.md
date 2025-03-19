@@ -106,6 +106,8 @@ Create ECR (Elastic Contrainer Registry) repository which is a fully-managed doc
 Add a job to CI/CD pipeline for deployment
 Create an EC2 instance and allow HTTPS and HTTP to that from the internet. When the instance is created, click on it and choose connect and use default settings.
 
+Then in Security, go to security groups -> edit inbound rules -> Add rule -> Custom TCP, port 8080 (to expose the container port), anywhere IPv4. then from the EC2 instance, copy the Public IPv4 address and call that with port 8080 in a browser
+
 Execute these commands in EC2 terminal to setup docker
 ```
 sudo apt-get update -y
