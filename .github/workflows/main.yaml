@@ -81,7 +81,7 @@ jobs:
 
       - name: Run Docker Image to serve users # the docker will be run as container
         run: |
-         docker run -d -p 8080:8080 --ipc="host" --name=networksecurity -e 'AWS_ACCESS_KEY_ID = ${{ secrets.AWS_ACCESS_KEY_ID }}' ${{secrets.AWS_ECR_LOGIN_URI}}/${{secrets.ECR_REPOSITORY_NAME}}:latest
+         docker run -d -p 8080:8080 --ipc="host" --name=networksecurity-new -e 'AWS_ACCESS_KEY_ID = ${{ secrets.AWS_ACCESS_KEY_ID }}' ${{secrets.AWS_ECR_LOGIN_URI}}/${{secrets.ECR_REPOSITORY_NAME}}:latest
       - name: Clean previous images and containers
         run: |
          docker system prune -f
